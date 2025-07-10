@@ -1,0 +1,20 @@
+MemberOf,MethodName,ParametersList,Return Type,SourceType,TaintedVar
+Ljava/util/Scanner,next,,Ljava/lang/String,CLASS,ret
+Ljava/util/Scanner,next,Ljava/lang/String;,Ljava/lang/String,CLASS,ret
+Ljava/util/Scanner,next,Ljava/util/regex/Pattern;,Ljava/lang/String,CLASS,ret
+Ljava/util/Scanner,nextLine,,Ljava/lang/String,CLASS,ret
+Ljava/util/Scanner,nextBoolean,,Z,CLASS,ret
+Ljava/util/Scanner,nextByte,,B,CLASS,ret
+Ljava/util/Scanner,nextByte,I,B,CLASS,ret
+Ljava/util/Scanner,nextShort,,S,CLASS,ret
+Ljava/util/Scanner,nextShort,I,S,CLASS,ret
+Ljava/util/Scanner,nextInt,,I,CLASS,ret
+Ljava/util/Scanner,nextInt,I,I,CLASS,ret
+Ljava/util/Scanner,nextLong,,J,CLASS,ret
+Ljava/util/Scanner,nextLong,I,J,CLASS,ret
+Ljava/util/Scanner,nextFloat,,F,CLASS,ret
+Ljava/util/Scanner,nextDouble,,D,CLASS,ret
+Ljava/util/Scanner,nextBigInteger,,Ljava/math/BigInteger,CLASS,ret
+Ljava/util/Scanner,nextBigInteger,I,Ljava/math/BigInteger,CLASS,ret
+Ljava/util/Scanner,nextBigDecimal,,Ljava/math/BigDecimal,CLASS,ret
+Ljava/util/Scanner,next,,Ljava/lang/Object,CLASS

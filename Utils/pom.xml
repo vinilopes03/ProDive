@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>partial-analyzer</artifactId>
+        <groupId>s2e.lab</groupId>
+        <version>0.1</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>partial-analyzer-utils</artifactId>
+    <name>PartialAnalyzerUtils</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <dependencies>
+        <!-- OpenCSV -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.1</version>
+        </dependency>
+
+        <!-- Graph Stream -->
+        <dependency>
+            <groupId>org.graphstream</groupId>
+            <artifactId>gs-ui-swing</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.graphstream</groupId>
+            <artifactId>gs-core</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.graphstream</groupId>
+            <artifactId>gs-algo</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+        <!-- Apache Commons (for adding extra data structures, e.g. tuples) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+            <type>jar</type>
+        </dependency>
+
+        <!-- Eclipse libraries, specify which ones to avoid this error:  https://github.com/wala/WALA/issues/1083 -->
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.resources</artifactId>
+            <version>3.14.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.equinox.common</artifactId>
+            <version>3.14.100</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.commands</artifactId>
+            <version>3.9.700</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- IBM Wala -->
+        <dependency> <!-- WALA Core -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.core</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency> <!-- Utility library included with the (WALA) -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.util</artifactId>
+            <version>1.5.7</version>
+            <type>jar</type>
+        </dependency>
+        <dependency> <!-- WALA Common AST core library -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.cast</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency><!-- WALA Shrike library for bytecode reading and instrumentation-->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.shrike</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency> <!-- WALA Common AST core Java front-end functionality -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.cast.java</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency> <!-- WALA Dalvik frontend -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.dalvik</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency> <!-- WALA Common AST Java ECJ front-end -->
+            <groupId>com.ibm.wala</groupId>
+            <artifactId>com.ibm.wala.cast.java.ecj</artifactId>
+            <version>1.5.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>org.json</artifactId>
+            <version>chargebee-1.0</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
